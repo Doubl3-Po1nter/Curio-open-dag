@@ -1,0 +1,115 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: gird;
+    background-color: #f8aecd;
+    padding: 10px;
+    height: 170px;
+}
+
+header img {
+    width: 200px;
+
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+.image-logo {
+    align-items: flex-start;
+    max-width: 1600px;
+
+}
+
+h1 {
+    color: #03357c;
+    font-size: 4rem;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+/* Bovenste container */
+.container-school-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f8aecd;
+    margin-bottom: 80px;
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.06);
+}
+
+.container-school-info .overzicht-image {
+    max-width: 800px;
+    background-color: white;
+}
+
+.container-school-info img {
+    max-width: 800px;
+}
+
+.container-school-info h2 {
+    color: #053c89;
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.container-school-info p {
+    color: #03357c;
+    font-size: 1.4rem;
+    max-width: 600px;
+}
+/* -------------------------- */
+
+
+/* container blokken */
+.container-school-blokken {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin-bottom: 80px;
+    border-radius: 3px;
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.06);
+}
+
+.container-school-blokken .overzicht-image {
+    max-width: 800px;
+    background-color: white;
+}
+
+.container-school-blokken img {
+    max-width: 800px;
+}
+
+.container-school-blokken h2 {
+    color: #053c89;
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.container-school-blokken p {
+    color: #03357c;
+    font-size: 1.4rem;
+    max-width: 600px;
+}
+/* --------------------------------- */
+
+
+
+.wrapper2 {
+    max-width: 1600px;
+}
