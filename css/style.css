@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -11,13 +12,14 @@ html {
 header {
     background-color: #f8aecd;
     padding: 10px;
-    height: 115px;
+    height: 135px;
     display: flex;
 }
 
 
 .header-wrapper {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 10px 20px;
 }
@@ -35,7 +37,7 @@ nav {
     padding: 10px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
     font-weight: 700;
@@ -44,7 +46,7 @@ nav a{
 }
 
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
@@ -60,12 +62,13 @@ h1 {
 }
 
 .wrapper {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 60px 20px;
 }
 
-.all-containers{
+.all-containers {
     display: flex;
     flex-direction: column;
 }
@@ -87,11 +90,11 @@ h1 {
     border-radius: 15px;
 }
 
-.text-container{
+.text-container {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    
+
 }
 
 .container-school-info img {
@@ -114,6 +117,7 @@ h1 {
     width: 95%;
     line-height: 1.5;
 }
+
 /* -------------------------- */
 
 
@@ -151,8 +155,9 @@ h1 {
     font-size: 1.4rem;
     width: 700px;
     line-height: 1.5;
-    
+
 }
+
 /* --------------------------------- */
 
 
@@ -161,7 +166,7 @@ h1 {
     display: flex;
     gap: 40px;
     margin-bottom: 80px;
-    
+
 }
 
 .middle-card {
@@ -202,6 +207,7 @@ h1 {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
 /* --------------------------------- */
 
 /* Onderste container */
@@ -295,4 +301,270 @@ h1 {
 #huiswerk,
 #rooster {
     scroll-margin-top: 300px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+
+/* TABLET */
+@media (max-width: 1500px) {
+
+    header {
+        height: auto;
+    }
+
+    .header-wrapper {
+        padding: 15px 20px;
+    }
+
+    header img {
+        width: 170px;
+    }
+
+
+    /* NAVBAR */
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+
+    /* OPEN DAG */
+
+    .container-school-info {
+        flex-direction: column;
+    }
+
+    .container-school-info img {
+        width: 100%;
+        height: auto;
+
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .container-school-info h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .container-school-info p {
+        width: 100%;
+    }
+
+
+    /* SCHOOL BLOKKEN */
+
+    .container-school-blokken {
+        flex-direction: column;
+    }
+
+    .container-school-blokken .overzicht-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-school-blokken img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-school-blokken h2 {
+        max-width: none;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .container-school-blokken p {
+        width: 100%;
+    }
+
+
+    /* HUISWERK + ROOSTER */
+
+    .container-middle {
+        flex-direction: column;
+    }
+
+    .middle-card {
+        width: 100%;
+    }
+
+
+    /* ONDERSTE CONTAINER */
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-text-block {
+        width: 100%;
+    }
+}
+
+
+/* MOBIEL */
+@media (max-width: 650px) {
+
+    .wrapper {
+        padding: 30px 15px;
+    }
+
+
+    /* HEADER */
+
+    header {
+        padding: 10px;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .image-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    header img {
+        width: 140px;
+        margin: 0 auto;
+    }
+
+
+    /* NAV */
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 8px;
+        text-align: center;
+    }
+
+
+    /* ALGEMENE TEKSTCONTAINER */
+
+    .text-container {
+        padding: 25px;
+    }
+
+
+    /* OPEN DAG */
+
+    .container-school-info {
+        margin-bottom: 40px;
+    }
+
+    .container-school-info h2 {
+        font-size: 1.8rem;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .container-school-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* SCHOOL BLOKKEN */
+
+    .container-school-blokken {
+        margin-bottom: 40px;
+    }
+
+    .container-school-blokken h2 {
+        font-size: 1.8rem;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .container-school-blokken p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* HUISWERK EN ROOSTER */
+
+    .container-middle {
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .middle-card {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .img-container-huiswerk img,
+    .img-container-rooster img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .text-container-middle {
+        padding: 25px;
+    }
+
+    .text-container-middle h2 {
+        font-size: 1.6rem;
+    }
+
+    .text-container-middle p {
+        font-size: 1rem;
+    }
+
+
+    /* NA DE OPLEIDING */
+
+    .container-bottom {
+        padding-bottom: 25px;
+    }
+
+    .container-bottom h2 {
+        font-size: 1.8rem;
+        padding: 30px 20px;
+    }
+
+    .bottom-content {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bottom-text-block {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .bottom-text-block h3 {
+        font-size: 1.3rem;
+    }
+
+    .bottom-text-block p {
+        font-size: 1rem;
+    }
 }
