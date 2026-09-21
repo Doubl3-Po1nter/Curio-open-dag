@@ -1,29 +1,56 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
-    display: gird;
     background-color: #f8aecd;
     padding: 10px;
-    height: 170px;
+    height: 115px;
+    display: flex;
+}
+
+
+.header-wrapper {
+    width: 1600px;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 
 header img {
     width: 200px;
+    display: flex;
 
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 10px;
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
 .image-logo {
     align-items: flex-start;
-    max-width: 1600px;
 
 }
 
@@ -33,29 +60,44 @@ h1 {
 }
 
 .wrapper {
-    max-width: 1600px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
+    width: 1600px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
+.all-containers{
+    display: flex;
+    flex-direction: column;
+}
 
 /* Bovenste container */
 .container-school-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    transform: translate();
     background-color: #f8aecd;
     margin-bottom: 80px;
-    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .container-school-info .overzicht-image {
-    max-width: 800px;
+    width: 800px;
     background-color: white;
+    border-radius: 15px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    
 }
 
 .container-school-info img {
-    max-width: 800px;
+    width: 800px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .container-school-info h2 {
@@ -63,34 +105,37 @@ h1 {
     text-align: center;
     padding: 30px;
     font-size: 3rem;
-    max-width: 600px;
+    width: 600px;
 }
 
 .container-school-info p {
     color: #03357c;
     font-size: 1.4rem;
-    max-width: 600px;
+    width: 95%;
+    line-height: 1.5;
 }
 /* -------------------------- */
 
 
 /* container blokken */
 .container-school-blokken {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     background-color: white;
     margin-bottom: 80px;
-    border-radius: 3px;
-    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .container-school-blokken .overzicht-image {
-    max-width: 800px;
+    width: 800px;
     background-color: white;
+    border-radius: 15px;
+
 }
 
 .container-school-blokken img {
-    max-width: 800px;
+    width: 800px;
 }
 
 .container-school-blokken h2 {
@@ -104,12 +149,150 @@ h1 {
 .container-school-blokken p {
     color: #03357c;
     font-size: 1.4rem;
-    max-width: 600px;
+    width: 700px;
+    line-height: 1.5;
+    
 }
 /* --------------------------------- */
 
 
+/* middelste containers */
+.container-middle {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    
+}
 
-.wrapper2 {
-    max-width: 1600px;
+.middle-card {
+    width: 50%;
+    background-color: #053c89;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-container-rooster img {
+    width: 110%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-container-huiswerk img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.text-container-middle {
+    padding: 40px;
+}
+
+.text-container-middle h2 {
+    color: #f8aecd;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-container-middle p {
+    color: #f8aecd;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+/* --------------------------------- */
+
+/* Onderste container */
+.container-bottom {
+    width: 100%;
+    background-color: #ffb8d8;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-bottom:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.container-bottom h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 40px;
+    text-align: center;
+}
+
+.container-bottom h2 span {
+    color: #03357c;
+    transition: color 0.2s ease;
+}
+
+.bottom-content {
+    display: flex;
+    gap: 25px;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bottom-text-block {
+    width: 33.33%;
+    background-color: #03357c;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease;
+}
+
+.bottom-text-block:hover {
+    transform: translateY(-5px);
+}
+
+.bottom-text-block h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.bottom-text-block p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.container-school-info,
+.container-school-blokken,
+.middle-card,
+.container-bottom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-school-info:hover,
+.container-school-blokken:hover,
+.middle-card:hover,
+.container-bottom:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+#open-dag-info,
+#blokken,
+#wat-kun-je-na-deze-opleiding {
+    scroll-margin-top: 150px;
+}
+
+#huiswerk,
+#rooster {
+    scroll-margin-top: 300px;
 }
