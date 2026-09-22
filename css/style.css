@@ -9,6 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body{
+    overflow-x: hidden;
+}
+
 header {
     background-color: #f8aecd;
     padding: 10px;
@@ -303,10 +308,9 @@ h1 {
     scroll-margin-top: 300px;
 }
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
+/* ------------------------------ */
 
+/* RESPONSIVE */
 
 /* TABLET */
 @media (max-width: 1500px) {
@@ -468,8 +472,12 @@ h1 {
 
     /* OPEN DAG */
 
+    .all-containers{
+        row-gap: 40px;
+    }
     .container-school-info {
         margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .container-school-info h2 {

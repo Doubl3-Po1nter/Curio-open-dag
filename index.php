@@ -29,7 +29,6 @@
 
 <body>
     <div class="wrapper">
-
         <div class="all-containers">
             <div class="container-school-info">
                 <div class="text-container">
@@ -53,16 +52,12 @@
             </div>
 
             <div class="container-middle">
-
                 <div class="middle-card">
-
                     <div class="img-container-huiswerk">
                         <img src="images/thorium_QPpI2ctpGV.png" alt="huiswerk">
                     </div>
-
                     <div class="text-container-middle">
                         <h2 id="huiswerk">Huiswerk...</h2>
-
                         <p>
                             Huiswerk is best overzichtelijk bij deze opleiding.
                             Je hoeft alleen te kijken wat je nog af moet maken.
@@ -70,19 +65,14 @@
                             aan je docent via Teams of in de klas.
                         </p>
                     </div>
-
                 </div>
 
-
                 <div class="middle-card">
-
                     <div class="img-container-rooster">
                         <img src="images/Rooster-eerste-leerjaar.png" alt="rooster">
                     </div>
-
                     <div class="text-container-middle">
                         <h2 id="rooster">Hoe zit een dag in elkaar</h2>
-
                         <p>
                             Dagen kunnen verschillend zijn, hier heb je een paar
                             voorbeelden van hoe het eerste leerjaar eruit ziet.
@@ -90,20 +80,14 @@
                             halen, kunnen klaar zijn met bepaalde vakken.
                         </p>
                     </div>
-
                 </div>
-
             </div>
 
             <div class="container-bottom">
-
                 <h2 id="wat-kun-je-na-deze-opleiding"><span>Wat kun je doen na deze opleiding?</span></h2>
-
                 <div class="bottom-content">
-
                     <div class="bottom-text-block">
                         <h3>Webdevelopment</h3>
-
                         <p>
                             Vind je het leuk om websites te bouwen? Dan kun je bijvoorbeeld
                             aan de slag als webdeveloper of fullstack developer. Je werkt dan
@@ -111,10 +95,8 @@
                             achter de website.
                         </p>
                     </div>
-
                     <div class="bottom-text-block">
                         <h3>Backend & software</h3>
-
                         <p>
                             Werk je liever met databases, gegevens en de technische kant van
                             applicaties? Dan kun je je richten op backend development. Je kunt
@@ -122,10 +104,8 @@
                             problemen oplossen.
                         </p>
                     </div>
-
                     <div class="bottom-text-block">
                         <h3>Verder studeren</h3>
-
                         <p>
                             Je hoeft na deze opleiding niet meteen te gaan werken. Je kunt ook
                             verder studeren en je kennis uitbreiden. Uiteindelijk kun je de
